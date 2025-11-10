@@ -20,11 +20,26 @@
         margin: 0 10px;
         cursor: pointer;
       }
+      #numInput {
+        font-size: 24px;
+        margin-top: 48px;
+        width: 100px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
     <div id="result">0</div>
-    <div><button class="btn">+</button> <button class="btn">-</button></div>
+    <div>
+      <button class="btn" id="plusBtn">+</button>
+      <button class="btn" id="minusBtn">-</button>
+    </div>
+    <div>
+      <input type="number" id="numInput" />
+      <button class="btn" id="plusInput">+</button>
+      <button class="btn" id="minusInput">-</button>
+      <p>입력한 만큼 증가/감소</p>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
