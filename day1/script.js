@@ -1,3 +1,3 @@
 let btn = document.querySelectorAll("button");
-let h1 = document.querySelector("h1");
+let result = document.getElementById("result");
 let count = 0;
