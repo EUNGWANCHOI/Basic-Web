@@ -8,7 +8,8 @@ let minusInputBtn = document.getElementById("minusInput");
 let count = 0;
 
 const inputValue = () => {
-  return Number(numInput.value);
+  const value = Number(numInput.value);
+  return isNaN(value) ? 0 : value;
 };
 
 const increment = () => {
@@ -19,6 +20,14 @@ const decrement = () => {
   setCount(count - 1);
 };
 
+const incrementByInput = () => {
+  setCount(count + inputValue());
+};
+
+const decrementByInput = () => {
+  setCount(count - inputValue());
+};
+
 const setCount = (newValue) => {
   count = newValue;
   result.innerText = count;
@@ -26,3 +35,5 @@ const setCount = (newValue) => {
 
 plusBtn.addEventListener("click", increment);
 minusBtn.addEventListener("click", decrement);
+plusInputBtn.addEventListener("click", incrementByInput);
+minusInputBtn.addEventListener("click", decrementByInput);
