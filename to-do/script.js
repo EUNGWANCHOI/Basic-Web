@@ -4,12 +4,13 @@ let list = document.getElementById("todo-list");
 
 const addTodo = () => {
   const todoText = input.value.trim();
-  if (todoText === "") {
-    alert("할 일을 입력해주세요!");
-  } else {
+  if (todoText === "") return alert("할 일을 입력해주세요!");
+  else {
     const todo = document.createElement("li");
-    todo.innerText = todoText;
+    todo.textContent = todoText;
     list.appendChild(todo);
     input.value = "";
   }
 };
+
+addBtn.addEventListener("click", addTodo);
