@@ -4,15 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TodoList</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+        background-color: #1a1a1a;
+      }
+
+      #container {
+        background-color: #262626;
+        padding: 20px;
+        border-radius: 8px;
+        display: inline-block;
+      }
+
+      h1 {
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+
+      #todo-input {
+        font-size: 16px;
+        border-radius: 24px;
+        padding: 12px;
+        width: 300px;
+      }
+      #add-btn {
+        font-size: 16px;
+        border-radius: 24px;
+        font-weight: 700;
+        padding: 12px 20px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+      #todo-list {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+      #todo-list li {
+        color: #ffffff;
+        font-size: 16px;
+        padding: 12px;
+        margin: 10px 0;
+        text-align: left;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid #ccc;
+        border-radius: 48px;
+      }
+    </style>
   </head>
   <body>
-    <h1>To-do List</h1>
-    <!-- 입력창과 할 일을 추가하기 위한 버튼-->
-    <input type="text" id="todo-input" placeholder="할 일 입력" />
+    <div id="container">
+      <h1>To-do List</h1>
+      <!-- 입력창과 할 일을 추가하기 위한 버튼-->
+      <input type="text" id="todo-input" placeholder="할 일 입력" />
 
-    <button id="add-btn">+</button>
-    <ul id="todo-list"></ul>
+      <button id="add-btn">+</button>
+      <ul id="todo-list"></ul>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
