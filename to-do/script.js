@@ -1,6 +1,7 @@
 let addBtn = document.getElementById("add-btn");
 let input = document.getElementById("todo-input");
 let list = document.getElementById("todo-list");
+// 테스트
 
 /* 할 일 추가 함수 **/
 const addTodo = () => {
@@ -9,7 +10,6 @@ const addTodo = () => {
   else {
     const todo = document.createElement("li");
     todo.textContent = todoText;
-    
 
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
